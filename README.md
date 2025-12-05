@@ -65,6 +65,8 @@ python -m xhs_extractor_module.xhs_login
 
 这会打开浏览器，完成登录后按回车即可。登录态会自动保存。
 
+![登录流程](docs/images/login_process.png)
+
 > **重要提示**：使用前请先根据指引进行本地小红书登录，拿到cookie信息后会自动保存，后续输入链接不需要再进行登录。登录态保存在 `xhs_extractor_module/xhs_state.json` 文件中，请妥善保管。
 
 ### 使用方式
@@ -74,6 +76,8 @@ python -m xhs_extractor_module.xhs_login
 ```bash
 streamlit run xhs_extractor_module/web_app.py
 ```
+
+![Web界面整体布局](docs/images/web_interface_overview.png)
 
 浏览器会自动打开，你可以：
 - **输入方式**：
@@ -149,12 +153,23 @@ print(f"图片: {len(note.images)} 张")
    - 可以直接复制小红书官方的分享链接文本格式（如："算法面经... http://xhslink.com/o/ABC123 复制后打开【小红书】查看笔记！"）
    - 也可以直接复制小红书笔记的URL链接（如：`https://www.xiaohongshu.com/explore/...` 或 `http://xhslink.com/...`）
    - 工具会自动识别输入格式并提取
+   
+   ![Web界面输入方式](docs/images/web_interface_input.png)
+
 2. **选择功能**：
    - ✅ OCR识别图片文字
    - ✅ 下载图片到本地
    - ✅ 下载笔记正文（Markdown格式）
+   
+   ![Web界面功能选项](docs/images/web_interface_options.png)
+
 3. **设置保存位置**：自定义保存目录
+   
+   ![保存目录设置](docs/images/web_interface_save_location.png)
+
 4. **一键提取**：自动提取并保存
+   
+   ![提取结果预览](docs/images/web_interface_result.png)
 
 ### 保存的文件结构
 
@@ -167,6 +182,8 @@ print(f"图片: {len(note.images)} 张")
     └── ...
 ```
 
+![保存的文件结构](docs/images/file_structure.png)
+
 ### Markdown文件内容
 
 保存的Markdown文件包含：
@@ -174,6 +191,8 @@ print(f"图片: {len(note.images)} 张")
 - 正文内容
 - OCR识别的文字（如果启用）
 - 图片引用
+
+![Markdown文件预览](docs/images/markdown_preview.png)
 
 > **💡 提示**：导出的Markdown文件可以直接发送给GPT-4V、Claude等多模态LLM模型进行更深入的分析和理解，效果比OCR更好。
 

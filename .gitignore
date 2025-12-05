@@ -66,10 +66,15 @@ notes/
 !xhs_extractor_module/WEB_APP_GUIDE.md
 !xhs_extractor_module/OCR_GUIDE.md
 !xhs_extractor_module/ARCHITECTURE.md
+# 忽略用户下载的图片文件
 *.jpg
 *.png
 *.gif
 *.webp
+# 但允许项目文档图片
+!docs/images/*.png
+!docs/images/*.jpg
+!docs/images/*.gif
 
 # Streamlit
 .streamlit/
