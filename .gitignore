@@ -57,8 +57,15 @@ tmp/
 Downloads/xhs_notes/
 xhs_notes/
 notes/
+# 忽略所有 .md 文件（用户下载的笔记）
 *.md
+# 但允许项目文档文件
 !README.md
+!xhs_extractor_module/QUICK_START.md
+!xhs_extractor_module/CLI_USAGE.md
+!xhs_extractor_module/WEB_APP_GUIDE.md
+!xhs_extractor_module/OCR_GUIDE.md
+!xhs_extractor_module/ARCHITECTURE.md
 *.jpg
 *.png
 *.gif
