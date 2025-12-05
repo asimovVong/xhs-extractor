@@ -58,6 +58,7 @@ Downloads/xhs_notes/
 xhs_notes/
 notes/
 *.md
+!README.md
 *.jpg
 *.png
 *.gif
