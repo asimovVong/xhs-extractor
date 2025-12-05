@@ -1,0 +1,88 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environment
+venv/
+env/
+ENV/
+.venv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# 登录态文件（重要：不要提交）
+xhs_extractor_module/xhs_state.json
+xhs_state.json
+*.state.json
+
+# Cookie文件
+cookies/
+*.cookies.json
+
+# 测试和临时文件
+.pytest_cache/
+.coverage
+htmlcov/
+*.log
+*.tmp
+temp/
+tmp/
+
+# 下载的笔记文件（用户数据）
+Downloads/xhs_notes/
+xhs_notes/
+notes/
+*.md
+*.jpg
+*.png
+*.gif
+*.webp
+
+# Streamlit
+.streamlit/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# 环境变量
+.env
+.env.local
+
+# 系统文件
+Thumbs.db
+.DS_Store
+
+# 备份文件
+*.bak
+*.backup
+*~
+
+# OCR模型文件（如果下载到本地）
+.paddleocr/
+

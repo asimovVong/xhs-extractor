@@ -1,0 +1,10 @@
+#!/usr/bin/env python3
+"""
+小红书笔记提取工具 - 快捷入口
+"""
+import sys
+from xhs_extractor_module.cli import main
+
+if __name__ == "__main__":
+    main()
+

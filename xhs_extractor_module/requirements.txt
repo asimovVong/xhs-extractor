@@ -1,0 +1,18 @@
+# 小红书笔记提取模块依赖
+
+# 基础依赖（必需）
+requests>=2.28.0
+beautifulsoup4>=4.11.0
+
+# Playwright 依赖（用于自动登录和抓取）
+playwright>=1.40.0
+
+# Web前端依赖（可选）
+# 如果不需要Web界面，可以不安装
+streamlit>=1.28.0
+
+# OCR 功能依赖（可选）
+# 如果不需要 OCR 功能，可以不安装以下依赖
+paddleocr>=2.6.0
+paddlepaddle>=2.4.0
+
